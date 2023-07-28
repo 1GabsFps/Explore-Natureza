@@ -1,0 +1,35 @@
+.natureza-section{
+    gap: 2rem;
+}
+
+
+.natureza-text{
+    display: block;
+}
+.img-scroll img{
+    width: 900px;
+}
+
+.img-scroll{
+    height: 50vh;
+    width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.natureza-text p {
+    margin-left: 10rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 900px;
+}
+
+.natureza-text h2{
+    margin-left: 10rem;
+    color: var(--color-brown);
+}
+
+.titulo{
+    font-family: var(--font-display);
+}
