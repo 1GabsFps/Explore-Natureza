@@ -6,7 +6,7 @@
 
 }
 .titulo{
-    font-family: 'Sarala', sans-serif;
+    font-family: var(--font-display);
     font-size: 3rem;
     margin: 2rem 0rem;
 }

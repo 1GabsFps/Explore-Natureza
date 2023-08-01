@@ -1,0 +1,17 @@
+.contato-content{
+    display: flex;
+}
+.contato{
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+footer{
+    max-width: var(--width);
+    margin: 2rem 0 2rem auto;
+    color: var(--color-white);
+    background-color: var(--background-green)   
+}
+.texto-footer{
+    font-size: 1em;
+    padding: 0.5rem;
+}
