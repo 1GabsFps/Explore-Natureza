@@ -1,0 +1,43 @@
+.natureza-section{
+    display: flex;
+    min-height: 80vh;
+}
+
+
+.img-scroll img{
+    width: 900px;
+    height: 75vh;
+}
+
+.img-scroll{
+    height: 75vh;
+    width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.natureza-text p {
+    margin-left: 10rem;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    max-width: 900px;
+}
+
+.natureza-text h2{
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: var(--color-brown);
+}
+
+.titulo{
+    font-family: var(--font-display);
+}
+.img-scroll::-webkit-scrollbar{
+    width: 10px;
+}
+.img-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--background-green);
+    border-radius: 10px;
+}
