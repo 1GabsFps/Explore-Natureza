@@ -1,43 +1,95 @@
-.natureza-section{
-    display: flex;
-    min-height: 80vh;
+.natureza-section {
+  display: flex;
+  min-height: 80vh;
 }
 
-
-.img-scroll img{
-    width: 900px;
-    height: 75vh;
+.img-scroll img {
+  width: 900px;
+  height: 75vh;
 }
 
-.img-scroll{
-    height: 75vh;
-    width: 300px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: relative;
+.img-scroll {
+  height: 75vh;
+  width: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .natureza-text p {
-    margin-left: 10rem;
+  margin-left: 10rem;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  max-width: 900px;
+}
+
+.natureza-text h2 {
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: var(--color-brown);
+}
+
+.titulo {
+  font-family: var(--font-display);
+}
+.img-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.img-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--background-green);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .natureza-section {
+    flex-direction: column;
+  }
+
+  .img-scroll {
+    width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .img-scroll img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .natureza-text p {
+    margin-left: 0;
     font-size: 1rem;
     margin-bottom: 0.7rem;
     max-width: 900px;
-}
+  }
 
-.natureza-text h2{
-    margin-left: 10rem;
+  .natureza-text h2 {
+    margin-left: 0;
     margin-bottom: 1rem;
     margin-top: 2rem;
     color: var(--color-brown);
+  }
+  .img-google-map {
+    width: 300px;
+    height: 300px;
+  }
 }
 
-.titulo{
-    font-family: var(--font-display);
+.natureza-section {
+  padding: 0 50px;
 }
-.img-scroll::-webkit-scrollbar{
-    width: 10px;
+.titulo {
+  padding: 0 50px;
 }
-.img-scroll::-webkit-scrollbar-thumb{
-    background-color: var(--background-green);
-    border-radius: 10px;
+
+@media screen and (max-width: 768px) {
+  .natureza-section {
+    padding: 0;
+  }
+  .titulo {
+    padding: 0;
+  }
 }
