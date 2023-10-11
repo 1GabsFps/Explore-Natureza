@@ -62,7 +62,9 @@ svg {
 
 .divSearch {
   width: 100%;
+  max-width: -moz-fit-content;
   max-width: fit-content;
+  max-width: -moz-fit-content; /* Add vendor prefix for Firefox */
   display: flex;
   justify-content: space-between;
   align-items: center;
