@@ -1,3 +1,5 @@
+export function Formulario() {
+
 const jsmodal = document.querySelector(".js-modal");
 const dados = {}
 if (localStorage.getItem("email") === null) {
@@ -26,3 +28,4 @@ document.querySelector(".modal-close").addEventListener("click", () => {
   // esconde o elemento
   jsmodal.classList.remove("active");
 });
+}

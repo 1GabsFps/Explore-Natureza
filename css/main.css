@@ -1,13 +1,14 @@
+/*Ajusta o tamanho da seção dos textos*/
 .natureza-section {
   display: flex;
   min-height: 80vh;
 }
-
+/*ajusta o tamanho de onde as imagens ficam alocadas*/
 .img-scroll img {
   width: 900px;
   height: 75vh;
 }
-
+/*ajusta o tamanho do scroll das imagens*/
 .img-scroll {
   height: 75vh;
   width: 300px;
@@ -15,32 +16,34 @@
   overflow-x: hidden;
   position: relative;
 }
-
+/*Ajusta o tamanho dos paragrafos da seção dos textos*/
 .natureza-text p {
   margin-left: 10rem;
   font-size: 1rem;
   margin-bottom: 0.7rem;
   max-width: 900px;
 }
-
+/*Ajusta o tamanho dos Sub Titulos da seção dos textos*/
 .natureza-text h2 {
   margin-left: 10rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
   color: var(--color-brown);
 }
-
+/*Ajusta a fonte do titulo*/
 .titulo {
   font-family: var(--font-display);
 }
+/*Ajusta o tamanho do scroll*/
 .img-scroll::-webkit-scrollbar {
   width: 10px;
 }
+/*Ajusta a cor do scroll e a borda dele*/
 .img-scroll::-webkit-scrollbar-thumb {
   background-color: var(--background-green);
   border-radius: 10px;
 }
-
+/*Ajusta varias informações se o tamanho da tela do dispositivo for menor que 768px*/
 @media screen and (max-width: 768px) {
   .natureza-section {
     flex-direction: column;
@@ -85,11 +88,4 @@
   padding: 0 50px;
 }
 
-@media screen and (max-width: 768px) {
-  .natureza-section {
-    padding: 0;
-  }
-  .titulo {
-    padding: 0;
-  }
-}
+

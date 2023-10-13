@@ -1,12 +1,9 @@
-import faqInit from "./faq.js";
-import imgsInit from "./imgs.js";
-import menuMobileInit from "./menu.js";
-import { Modal } from "./modules/modal.js";
+import {Faq} from "./faq.js";
+import {Formulario} from "./forms.js";
+import {menuMobile} from "./menu.js";
+import {imgSelector} from "./imgs.js";
 
-imgsInit()
-faqInit()
-menuMobileInit()
-
-new Modal('.js-modal', 
-'.modal-close', 
-'.modal-forms').init();
+Faq();
+Formulario();
+menuMobile();
+imgSelector();

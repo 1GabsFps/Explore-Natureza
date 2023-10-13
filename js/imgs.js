@@ -1,4 +1,4 @@
-
+export function imgSelector(){
 const imagens = document.querySelectorAll('.img-scroll img');
 const textos = document.querySelectorAll('.natureza-text');
 
@@ -13,3 +13,4 @@ imagens.forEach((imagem, index) => {
     textos[index].style.display = 'block';
     });
 });
+}

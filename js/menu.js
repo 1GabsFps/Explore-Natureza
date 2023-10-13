@@ -1,4 +1,5 @@
-    const toggle = document.querySelector('.toggle');
+export function menuMobile(){
+const toggle = document.querySelector('.toggle');
     const menuList = document.querySelector('.lista');
 
     if (toggle && menuList) {
@@ -11,4 +12,4 @@
 
         toggle.addEventListener('click', toggleMenu);
     }
-
+}

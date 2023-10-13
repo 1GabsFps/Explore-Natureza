@@ -8,6 +8,7 @@
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <!--Aba de Navegação do site com uma lista não ordenada com as opções, cada span representa um emoji diferente-->
     <nav class="menu">
         <div class="toggle">
             MENU
@@ -42,7 +43,9 @@
             </li>
         </ul>
     </nav>
+    <!--Titulo do site-->
     <h1 class="titulo">EXPLORE A NATUREZA!🌲</h1>
+    <!--Sessão aonde as imagens estão em uma lista-->
     <section class="natureza-section">
         <ul class="img-scroll">
             <li class="img-scroll">
@@ -55,9 +58,10 @@
                 <img src="./img/montanhas.jpg" alt="Montanhas" id="imagemscroll3">
             </li>
             <li class="img-scroll">
-                <img src="./img/Florestas.jpg" alt="Florestas" id="imagemscroll"4>
+                <img src="./img/Florestas.jpg" alt="Florestas" id="imagemscroll4">
             </li>
         </ul>
+        <!--Sessão aonde os textos falando sobre os ambientes de cada imagem, cada uma em sua propria sessão-->
     <section class="natureza-texts">
     <section class="natureza-text" data-id="imagemscroll1">
         <h2>
@@ -136,13 +140,14 @@
 </section>
 </div>
 </section>
+<!--Sessão do faq, aonde as perguntas são separadas por h3 e os textos em paragrafos-->
 <section class="faq-section">
     <h1 class="titulo">Faq🗨️......</h1>
 
     <div class="faq" id="faq">
         <dd class="questao">
             <h3>Por que é importante explorar a natureza?</h3>
-
+            <!--Svg que cria a seta do lado das perguntas-->
             <svg width="15" height="10" viewBox="0 0 42 25">
                 <path d="M3 3L21 21L39 3" stroke="White" stroke-width="7" stroke-linecap="round"/>
             </svg>
@@ -276,9 +281,7 @@
         </dt>  
     </div>
 </section>
-<script src="./js/imgs.js"></script>
-<script src="./js/faq.js"></script>
-<script src="./js/menu.js"></script>
+<!--Sessão de contato, aonde tem um mapa do google maps e as informações de contato-->
 <h1 class="titulo">CONTATO 📞</h1>
 <section class="contato-content">
     <iframe class="img-google-map"
@@ -291,9 +294,11 @@
             <p class="contato">E-mail: senaijundiai@sp.senai.br</p>
         </div>
 </section>
+<!--Footer do site-->
 <footer>
     <p class="texto-footer">© 2023 - Todos os direitos reservados</p>
 </footer>
+<!--Div para o Popup que aparece ao entrar no site para se cadastrar-->
 <div class=" modal js-modal">
         <span class="material-symbols-outlined modal-close">
             close
@@ -306,6 +311,7 @@
         </form>
         <div id="msg"></div>
     </div>
-    <script src="./js/forms.js"></script>
+    <!--Iniciação do script em js -->
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>

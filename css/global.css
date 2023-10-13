@@ -1,3 +1,4 @@
+/*Reseta alguamas informações do css para o site inteiro*/
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
   list-style: none;
   text-decoration: none;
 }
-
+/*cria variaveis com cores e fontes salvas dentro*/
 :root {
   --color-white: #fff;
   --background: #eef8f5;
@@ -23,17 +24,17 @@
   --font-primary: "Poppins", sans-serif;
   --width: 1200px;
 }
-
+/*define a fonte padrão do body, além da cor de fundo e a cor do texto*/
 body {
   background-color: var(--background);
   font-family: var(--font-primary);
   color: var(--color-text);
 }
-
+/*ajusta o display das imagens*/
 img {
   display: block;
 }
-
+/*Ajusta informações gerais do titulo do site*/
 .title {
   font-size: 4rem;
   max-width: 1200px;
@@ -43,7 +44,7 @@ img {
   font-family: var(--font-display);
   letter-spacing: 2px;
 }
-
+/*ajusta o tamanho e a margem do container*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
