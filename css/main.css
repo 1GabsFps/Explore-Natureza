@@ -1,35 +1,93 @@
-.natureza-section{
-    gap: 2rem;
-}
 
 
-.natureza-text{
-    display: block;
+/*Ajusta o tamanho da seção dos textos*/
+.natureza-section {
+  display: flex;
+  min-height: 80vh;
 }
-.img-scroll img{
-    width: 900px;
+/*ajusta o tamanho de onde as imagens ficam alocadas*/
+.img-scroll img {
+  width: 900px;
+  height: 75vh;
 }
+/*ajusta o tamanho do scroll das imagens*/
+.img-scroll {
+  height: 75vh;
+  width: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+/*Ajusta o tamanho dos paragrafos da seção dos textos*/
+.natureza-text p {
+  margin-left: 10rem;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  max-width: 900px;
+}
+/*Ajusta o tamanho dos Sub Titulos da seção dos textos*/
+.natureza-text h2 {
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: var(--color-brown);
+}
+/*Ajusta a fonte do titulo*/
+.titulo {
+  font-family: var(--font-display);
+}
+/*Ajusta o tamanho do scroll*/
+.img-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+/*Ajusta a cor do scroll e a borda dele*/
+.img-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--background-green);
+  border-radius: 10px;
+}
+/*Ajusta varias informações se o tamanho da tela do dispositivo for menor que 768px*/
+@media screen and (max-width: 768px) {
+  .natureza-section {
+    flex-direction: column;
+  }
 
-.img-scroll{
+  .img-scroll {
+    width: 100%;
     height: 50vh;
-    width: 300px;
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
-}
+  }
 
-.natureza-text p {
-    margin-left: 10rem;
+  .img-scroll img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .natureza-text p {
+    margin-left: 0;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
     max-width: 900px;
-}
+  }
 
-.natureza-text h2{
-    margin-left: 10rem;
+  .natureza-text h2 {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
     color: var(--color-brown);
+  }
+  .img-google-map {
+    width: 300px;
+    height: 300px;
+  }
 }
 
-.titulo{
-    font-family: var(--font-display);
+.natureza-section {
+  padding: 0 50px;
 }
+.titulo {
+  padding: 0 50px;
+}
+
+

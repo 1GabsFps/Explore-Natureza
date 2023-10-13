@@ -1,0 +1,38 @@
+/* Muda o display da area de contatos */
+.contato-content {
+  display: flex;
+  padding: 0 50px;
+}
+/* Ajusta a margem do texto */
+.contato {
+  margin-bottom: 40px;
+  margin-left: 40px;
+
+  
+}
+/* Ajusta o tamanho do e cor do footer */
+footer {
+  max-width: var(--width);
+  margin: 2rem 0 2rem auto;
+  color: var(--color-white);
+  background-color: var(--background-green);
+}
+/* Ajusta o tamanho do texto do footer */
+.texto-footer {
+  font-size: 1em;
+  padding: 0.5rem;
+}
+
+/* Ajusta algumas informações do footer e do contato quando o tamanho da tela é menor que 768px */
+
+@media (max-width: 768px) {
+  .contato-content {
+    flex-direction: column;
+  }
+  .contato {
+    margin-left: 0;
+  }
+  .texto-footer {
+    font-size: 0.8em;
+  }
+}

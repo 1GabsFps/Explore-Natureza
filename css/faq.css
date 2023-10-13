@@ -1,0 +1,68 @@
+/*Ajusta o tamanho e a direção do display da seção do faq */
+.faq-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/*Ajusta o Tamanho do titulo do faq*/
+.titulo {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+/*Ajusta a cor da borda e o tamanho de cada pergunta e define a borda de baixo*/
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fff2e7;
+}
+/*Define algumas propriedades das questões do faq*/
+.questao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Ajusta a cor e o tamanho do h3 do faq*/
+.questao h3 {
+  font-size: 1rem;
+  color: var(--color-brown);
+}
+/*Cria uma animação para quando a resposta aparecer e esconde ele*/
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease;
+}
+/*ajusta o tamanho do texto das respostas do faq */
+.resposta p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+/*Cria o tamanho de cada resposta do faq quando aberto*/
+.faq.active .resposta {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+/*Rotaciona o SVG da seta ao abrir o faq*/
+.faq.active svg {
+  transform: rotate(180deg);
+}
+/*Cria a animação do svg*/
+svg {
+  transition: transform 500ms ease-in;
+}
+/*Cria uma animação de fade*/
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+  .faq-section{
+    padding: 0 50px;
+  }

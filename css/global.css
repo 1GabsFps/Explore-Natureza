@@ -1,53 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+
+/*Reseta alguamas informações do css para o site inteiro*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
-
-:root{
-    --color-white: #fff;
-    --background: #eef8f5;
-    --background-green: #2fa97c;
-    --color-title: #565756;
-    --color-border: #f4e2e2;
-    --background-scroll:#75d2a8;
-    --color-border-scroll:#d8d8d8;
-    --color-text: #626262;
-    --color-brown: #814813;
-    --color-border-faq:#d8d8d8;
-    --font-display: 'Playfair Display SC', serif;
-    --font-primary: 'Poppins', sans-serif;
-    --width: 1200px;
-
+/*cria variaveis com cores e fontes salvas dentro*/
+:root {
+  --color-white: #fff;
+  --background: #eef8f5;
+  --background-green: #2fa97c;
+  --color-title: #565756;
+  --color-border: #f4e2e2;
+  --background-scroll: #75d2a8;
+  --color-border-scroll: #d8d8d8;
+  --color-text: #626262;
+  --color-brown: #814813;
+  --color-border-faq: #d8d8d8;
+  --font-display: "Playfair Display SC", serif;
+  --font-primary: "Poppins", sans-serif;
+  --width: 1200px;
 }
-
-body{
-    background-color: var(--background);
-    font-family: var(--font-primary);
-    color: var(--color-text);
+/*define a fonte padrão do body, além da cor de fundo e a cor do texto*/
+body {
+  background-color: var(--background);
+  font-family: var(--font-primary);
+  color: var(--color-text);
 }
-
-img{
-    display: block;
+/*ajusta o display das imagens*/
+img {
+  display: block;
 }
-
-.title{
-    font-size: 4rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0.5rem;
-    color: var(--color-title);
-    font-family: var(--font-display);
-    letter-spacing: 2px;
+/*Ajusta informações gerais do titulo do site*/
+.title {
+  font-size: 4rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  color: var(--color-title);
+  font-family: var(--font-display);
+  letter-spacing: 2px;
 }
-
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+/*ajusta o tamanho e a margem do container*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
