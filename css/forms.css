@@ -34,7 +34,10 @@
     background-color: tomato;
     border-radius:20%;
 }
-
+.site.active{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
 .js-modal.active{
     display: flex;
     animation: showModal .3s forwards;
